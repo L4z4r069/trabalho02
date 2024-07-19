@@ -20,7 +20,7 @@ function conectar()
 
 function executarSQL($conexao, $sql)
 {
-    $resultado = mysqlI_query($conexao, $sql);
+    $resultado = mysqli_query($conexao, $sql);
     if ($resultado == false){
         echo "Erro ao executar o comando SQL. ".
         mysqli_errno($conexao) . ": " . mysqli_error($conexao);
